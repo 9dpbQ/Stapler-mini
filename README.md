@@ -3,7 +3,7 @@
 ![AppIcon_512x512@1x](https://github.com/user-attachments/assets/6a590d9d-824f-48ff-9ce2-6ee7d008d08b)
 
 Stapler-miniは[Karabiner-Elements](https://karabiner-elements.pqrs.org/)で使える設定ファイルを出力するjson出力アプリです。
-Karabiner-Elementsで認識できるキーボードならどんなキーボードでも、リマップ、タップホールド、レイヤー機能、コンボを直感的にカスタマイズすることができます。
+Karabiner-Elementsで認識できるキーボードならどんなキーボードでも、リマップ・タップホールド・レイヤー機能・コンボを直感的にカスタマイズすることができます。
 
 ## ダウンロード
 
@@ -57,14 +57,10 @@ Conditionをピッカーから変更してCondition1〜9ぶんの状態を追加
 
 ##### Chord
 タップとホールドというよりは他のキーと押しているかどうかでタップとホールドどちらのキーコードを出力するかを決めるタイプです。他のキーと押せばホールド、そのキーのみの場合はタップのキーコードが出力されます。仕組み上ホールドに修飾キーとレイヤー遷移キー以外を入れると誤入力が発生します。
+
 ##### Duration
 閾値を境にタップとホールドのキーコードを分岐するタイプです。
 サイドバーからThresholdを設定すれば一つ一つの閾値を変更することも可能ですし、全体で揃えて閾値を変更したい場合はKarabiner-Elements側で設定することができます。
-
-##### マルチタップホールド
-タップダンスのような機能です。・ーや、・・・などを好きなキーコードにカスタマイズできます（Karabiner-Elements15.3.9以降が必要）。
-
-Chordタイプでは連打ホールドでタップに割り当てたキーコードをリピートできるようになるオプションを有効にできます。
 
 ### コンボのカスタマイズ
 <img width="481" alt="image" src="https://github.com/user-attachments/assets/e9c6bc6d-0635-426d-b63e-bcece08e6cfa" />
@@ -210,10 +206,10 @@ Conditionをピッカーから変更してCondition1〜9ぶんの状態を追加
 **Threshold** をトグルするとこのキーにのみ有効な閾値を設定できます。Durationタイプでは、``basic.to_if_held_down_threshold_milliseconds``がスライダーでカスタムできます。
 
 ##### マルチタップホールド
-タップダンスのような機能です。・ーや、・・・などを好きなキーコードにカスタマイズできます（Karabiner-Elements15.3.9以降が必要）。
+タップダンスのような機能です。・ー(トンツー)や、・・ー（トントンツー）などを好きなキーコードにカスタマイズできます（Karabiner-Elements15.3.9以降が必要）。
 
 Chordタイプでは連打ホールドでタップに割り当てたキーコードをリピートできるようになるオプションを有効にできます。
-これはタップにBackspaceなどを割り当てて、連打ホールドでBackspaceのホールドが扱えるようになります。
+これはタップにBackspaceなどを割り当ていて、連打ホールドでBackspaceのホールドが扱えるようになる、という使い方を想定しています。
 
 ##### Custom JSON
 LayerとConditionを満たすキーボードキー1つ分の書き換えを出力し、編集することができます。出力されたテキストを他のコードエディタに貼り付けて作業することを推奨します。
@@ -266,14 +262,13 @@ LayerとConditionを満たすコンボ1つ分の書き換えを出力し、編�
 
 ### Export
 <img width="499" alt="image" src="https://github.com/user-attachments/assets/2545acb9-5583-4d8f-8423-922948654f6d" />
+
 右上のツールバーから出力ボタンを押すとシートが表示されます。
 
 キーコードのリージョンはKarabiner-Elements側のVirtual Keyboard Typeに合わせてください。
-
 Export to Karabiner-Elementsと進むとjsonファイルを保存する先を指定する画面になります。テキトーな場所に保存すると、そのファイルをKarabiner-Elements側でインポートする画面が開きます。
-
 Karabiner-Elements側でImportと進みComplex ModificationsタブでAdd Predifined Rulesからインポートした設定をEnable Allとすればカスタムした内容にキーボードが書き換えされるようになるはずです。
-
 テキトーな場所に出力したjsonファイルは削除してしまって問題ありません。
+Karabiner-Elementsでインポートした際ファイルは、``~/.config/karabiner/assets/complex_modifications``フォルダ内に複製されているので、手直ししたい際はそれをテキストディタで開いて編集してください。
 
 シートからはShareボタンを押すとConfiguration自体を共有するためのjsonファイルが出力できます。
