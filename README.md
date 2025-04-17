@@ -5,6 +5,13 @@
 Stapler-miniは[Karabiner-Elements](https://karabiner-elements.pqrs.org/)で使える設定ファイルを出力するjson出力アプリです。
 Karabiner-Elementsで認識できるキーボードならどんなキーボードでも、リマップ、タップホールド、レイヤー機能、コンボを直感的にカスタマイズすることができます。
 
+## ダウンロード
+
+### Karabiner-Elementsをダウンロード
+[Karabiner-Elements](https://karabiner-elements.pqrs.org/)をダウンロードしていない場合はダウンロード、案内の通りに権限を与えます。
+
+### Stapler-miniをダウンロード
+
 ## カスタマイズの流れ
 
 ### Configurationの作成
@@ -98,6 +105,16 @@ Karabiner-EventViewerから変数の状態や、出力されているキーコ�
 
 
 ## それぞれのタブについての細かいTips
+
+### Configurationの作成
+<img width="496" alt="image" src="https://github.com/user-attachments/assets/f8c3c33b-09fd-443c-9c0b-f36337104001" />
+
+Configurationには3つのデバイス、デバイスに含まれるキーボードキー、Macroの情報が含まれています。
+左上の＋ボタンを押すとシートが表示され、カスタムしたいキーボードに近いものを選びAdd Configurationとして設定を追加してください。
+
+右上のImport Configurationボタンを押すとjsonファイルをインポートしてConfigurationを追加できます。
+⚠️注意：jsonと言ってもKarabiner-ElementsようのjsonではなくエクスポートからShareボタンで出力できるjsonファイルのみがインポートできます⚠️
+
 ### Macro
 <img width="429" alt="ss 2025-04-17 10 43 08" src="https://github.com/user-attachments/assets/584b6626-3e57-4ccf-9b27-91c2f8b52996" />
 
@@ -229,20 +246,34 @@ Comboタブではコンボをカスタマイズすることができます。
 Simultaneousesの構成要素の順番と、実際にキーの押された順番で書き換えを実行するか否かを判定するオプションです。
 
 ###### Strict
-構成要素の正順通りに押された時のみ書き換えを実行する 
+構成要素の正順通りに押された時のみ書き換えを実行するオプションです
 
 ###### Strict Inverse
-構成要素の逆順通りに押された時のみ書き換えを実行する 　
+構成要素の逆順通りに押された時のみ書き換えを実行するオプションです
 
 ###### Insensitive
-押された順番を無視する 
+押された順番は無視するオプションです。デフォルトはInsensitive。
 
 ##### Up Order
 down orderのキーアップ版です。
 
 ##### Up When keys all up
-コンボに割り当てたキーコードのキーアップをいつ発火するかを設定するオプションです。トグルするとコンボの構成要素全てのキーがKey_upした時にコンボに割り当てたキーコードのKey_upが出力されます。
+コンボに割り当てたキーコードのキーアップをいつ発火するかを設定するオプションです。トグルするとコンボの構成要素全てのキーがkey_upした時にコンボに割り当てたキーコードのkey_upが出力されます。
 
 ##### Custom　JSON
 LayerとConditionを満たすコンボ1つ分の書き換えを出力し、編集することができます。出力されたテキストを他のコードエディタに貼り付けて作業することを推奨します。
 複数の書き換えを内包しても構いませんが、注意としては **{** から始まって、 **}** で終わるようにしてください。
+
+### Export
+<img width="499" alt="image" src="https://github.com/user-attachments/assets/2545acb9-5583-4d8f-8423-922948654f6d" />
+右上のツールバーから出力ボタンを押すとシートが表示されます。
+
+キーコードのリージョンはKarabiner-Elements側のVirtual Keyboard Typeに合わせてください。
+
+Export to Karabiner-Elementsと進むとjsonファイルを保存する先を指定する画面になります。テキトーな場所に保存すると、そのファイルをKarabiner-Elements側でインポートする画面が開きます。
+
+Karabiner-Elements側でImportと進みComplex ModificationsタブでAdd Predifined Rulesからインポートした設定をEnable Allとすればカスタムした内容にキーボードが書き換えされるようになるはずです。
+
+テキトーな場所に出力したjsonファイルは削除してしまって問題ありません。
+
+シートからはShareボタンを押すとConfiguration自体を共有するためのjsonファイルが出力できます。
