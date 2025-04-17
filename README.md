@@ -254,15 +254,12 @@ Comboタブではコンボをカスタマイズすることができます。
 
 ##### Down order
 Simultaneousesの構成要素の順番と、実際にキーの押された順番で書き換えを実行するか否かを判定するオプションです。
-
 ###### Strict
-構成要素の正順通りに押された時のみ書き換えを実行するオプションです
-
+ 構成要素の正順通りに押された時のみ書き換えを実行するオプションです
 ###### Strict Inverse
-構成要素の逆順通りに押された時のみ書き換えを実行するオプションです
-
+ 構成要素の逆順通りに押された時のみ書き換えを実行するオプションです
 ###### Insensitive
-押された順番は無視するオプションです。デフォルトはInsensitive。
+ 押された順番は無視するオプションです。デフォルトはInsensitive。
 
 ##### Up Order
 down orderのキーアップ版です。
@@ -283,6 +280,10 @@ LayerとConditionを満たすコンボ1つ分の書き換えを出力し、編�
 Export to Karabiner-Elementsと進むとjsonファイルを保存する先を指定する画面になります。テキトーな場所に保存すると、そのファイルをKarabiner-Elements側でインポートする画面が開きます。
 Karabiner-Elements側でImportと進みComplex ModificationsタブでAdd Predifined Rulesからインポートした設定をEnable Allとすればカスタムした内容にキーボードが書き換えされるようになるはずです。
 テキトーな場所に出力したjsonファイルは削除してしまって問題ありません。
-Karabiner-Elementsでインポートした際ファイルは、``~/.config/karabiner/assets/complex_modifications``フォルダ内に複製されているので、手直ししたい際はそれをテキストディタで開いて編集してください。
+Karabiner-Elementsでインポートした際ファイルは、
+
+    ~/.config/karabiner/assets/complex_modifications
+
+フォルダ内に複製されているので、手直ししたい際はそれをテキストディタで開いて編集してください。
 
 シートからはShareボタンを押すとConfiguration自体を共有するためのjsonファイルが出力できます。
