@@ -1,6 +1,7 @@
 # Stapler-mini
-
-![icon_256x256@1x](https://github.com/user-attachments/assets/cc5e0b43-4d6c-4f2c-a7ef-8930f7dcfbb5)
+<p align="center">
+ <img src=https://github.com/user-attachments/assets/cc5e0b43-4d6c-4f2c-a7ef-8930f7dcfbb5>
+</p>
 
 Stapler-miniは[Karabiner-Elements](https://karabiner-elements.pqrs.org/)で使える設定ファイルを出力するjson出力アプリです。
 Karabiner-Elementsで認識できるキーボードならどんなキーボードでも、リマップ・タップホールド・レイヤー機能・コンボを直感的にカスタマイズすることができます。
@@ -11,23 +12,38 @@ Karabiner-Elementsで認識できるキーボードならどんなキーボー�
 [Karabiner-Elements](https://karabiner-elements.pqrs.org/)をダウンロードしていない場合はダウンロード、案内の通りに権限を与えます。
 
 ### Stapler-miniをダウンロード
-ダウンロードした後zipファイルを解凍し開こうとすると以下のような警告が出ます。
+<p align="center">
+ <img src=https://github.com/user-attachments/assets/2e2ba43a-ff35-4ce6-8745-6be44c22c911>
+ <img src=https://github.com/user-attachments/assets/1be0b596-032c-4c73-bb4d-1d816bae1eb4>
+</p>
 
-<img width="372" alt="ss 2025-05-16 15 10 34" src="https://github.com/user-attachments/assets/d05c3c0a-19b8-444d-9dd3-ed258665a089" />
+ダウンロードした後zipファイルを解凍し開こうとすると以下のような警告が出ます。
+<p align="center">
+<img src="https://github.com/user-attachments/assets/d05c3c0a-19b8-444d-9dd3-ed258665a089" />
+</p>
 
 アプリを開くには？ボタンを押すとヘルプウィンドウが立ち上がるので内容に従ってください。
-<img width="1073" alt="ss 2025-05-16 15 10 47" src="https://github.com/user-attachments/assets/5f063989-f68b-4c76-9ef0-80b4e7904b89" />
-<img width="711" alt="ss 2025-05-16 15 11 32" src="https://github.com/user-attachments/assets/8515dae5-ab90-4db1-8ea8-fc628f8390f6" />
+<p align="center">
+ <img align="center" width="1073" alt="ss 2025-05-16 15 10 47" src="https://github.com/user-attachments/assets/5f063989-f68b-4c76-9ef0-80b4e7904b89" />
+ <img align="center" width="711" alt="ss 2025-05-16 15 11 32" src="https://github.com/user-attachments/assets/8515dae5-ab90-4db1-8ea8-fc628f8390f6" />
+</p>
+
+
+
 
 ## カスタマイズの流れ
 
 ### Configurationの作成
-<img width="1552" alt="ss 2025-04-16 19 02 26" src="https://github.com/user-attachments/assets/ea584596-8969-4983-bc1d-4b5a1c05a55c" />
+<p align="center">
+ <img width="1552" alt="ss 2025-04-16 19 02 26" src="https://github.com/user-attachments/assets/ea584596-8969-4983-bc1d-4b5a1c05a55c" />
+</p>
 
 左上の＋ボタンを押すとシートが表示されます。カスタマイズしたいキーボードの配列やサイズを合わせてからAdd Configurationをクリックします。（ちょっと重いかも…Sorry…）
 
 ### デバイスの編集
-<img width="1552" alt="image" src="https://github.com/user-attachments/assets/baefacf0-a085-4d13-a40b-3788eaf6a557" />
+<p align="center">
+ <img width="1552" alt="image" src="https://github.com/user-attachments/assets/baefacf0-a085-4d13-a40b-3788eaf6a557" />
+</p>
 
 DeviceEditタブで元々のキーボードのIDや、元々のキーコードを変更することが可能です。デバイス右上の歯車ボタンをクリックするとデバイスに対してポップオーバーが表示されます。ここでデバイスごとにIDの編集や有効化無効化が行えます。
 
@@ -36,12 +52,16 @@ DeviceEditタブで元々のキーボードのIDや、元々のキーコード�
 Stapler-miniでは3つのデバイスを一度にカスタマイズすることができます。大きな＋ボタンをクリックするとデバイスが有効になります。デバイス左上のーボタンをクリックすると無効にできます。例えば、レイヤー1のマウスの左クリックに好きなコマンドを割り当てたりできます。
 
 ### キーボードをリマップする
-<img width="655" alt="ss 2025-04-16 19 09 09" src="https://github.com/user-attachments/assets/2ef092d0-2cb5-442f-8b82-b156646f9de0" />
+<p align="center">
+ <img width="655" alt="ss 2025-04-16 19 09 09" src="https://github.com/user-attachments/assets/2ef092d0-2cb5-442f-8b82-b156646f9de0" />
+</p>
 
 Remapタブではキーの配置などを好きにカスタマイズすることができます。下のキーをキーボードキーにドラッグ&ドロップ、選択されているキーボードキーにキーをクリックで注入、長押しでホールドに注入、キーボードキーをダブルクリックで入力監視状態に移行しキーボードの入力で注入してカスタマイズすることが可能です。
 
 また、さまざまな条件に基づいてカスタムを分岐することが可能です。
-<img width="818" alt="image" src="https://github.com/user-attachments/assets/9fddeeb9-9e5d-46fd-b2eb-160b545f9041" />
+<p align="center">
+ <img width="818" alt="image" src="https://github.com/user-attachments/assets/9fddeeb9-9e5d-46fd-b2eb-160b545f9041" />
+</p>
 
 #### レイヤー
 
@@ -56,7 +76,9 @@ Baseが普通にキーを押下した状態で、その他が数字・色に応�
 Conditionをピッカーから変更して9個分のConditionを追加でカスタマイズすることができます。それぞれに対して条件に必要なテキストフィールドを埋めることでその条件下のみで書き換えが行われるようになります。
 
 #### タップホールドのカスタマイズ
-<img width="480" alt="image" src="https://github.com/user-attachments/assets/cdd73473-9053-4b2d-843e-e82f78004c12" />
+<p align="center">
+ <img width="480" alt="image" src="https://github.com/user-attachments/assets/cdd73473-9053-4b2d-843e-e82f78004c12" />
+</p>
 
 ポップオーバーかサイドバーからタップホールドを有効にすることができます。
 タップホールドとはタップとホールドで違うキーコードを割り当てることができる機能です。例えばTabキーはタップしか通常使いませんが、そのホールドを好きな修飾キーやレイヤー遷移キーにすることができるようになります。
@@ -71,7 +93,9 @@ Conditionをピッカーから変更して9個分のConditionを追加でカス�
 サイドバーからThresholdを設定すれば一つ一つの閾値を変更することも可能ですし、全体で揃えて閾値を変更したい場合はKarabiner-Elements側で設定することができます。
 
 ### コンボのカスタマイズ
-<img width="481" alt="image" src="https://github.com/user-attachments/assets/e9c6bc6d-0635-426d-b63e-bcece08e6cfa" />
+<p align="center">
+ <img width="481" alt="image" src="https://github.com/user-attachments/assets/e9c6bc6d-0635-426d-b63e-bcece08e6cfa" />
+</p>
 
 Comboタブではコンボをカスタマイズすることができます。
 
@@ -80,14 +104,18 @@ Comboタブではコンボをカスタマイズすることができます。
 ＋ボタンを押してコンボを追加し、選択状態にした上でキーボードキーをクリックするとコンボの構成要素として登録されます。ハイライトされているキーボードキーの同時押しで割り当てたキー入力を発火できるような設定が出力できます。またRemapと同じようにレイヤーや、Condition、タップホールドのカスタマイズが可能です。
 
 ### マクロのカスタマイズ
-<img width="418" alt="image" src="https://github.com/user-attachments/assets/0c9060bf-1afa-43ff-a098-1667f6824b67" />
+<p align="center">
+ <img width="418" alt="image" src="https://github.com/user-attachments/assets/0c9060bf-1afa-43ff-a098-1667f6824b67" />
+</p>
 
 MacroタブではRemap、Comboタブで割り当てできるマクロを定義することができます。
 ここでのマクロとはキーコードの配列を指します。例えば⌘⇧left_arrow → ⌘X のようなマクロを作れば「文頭までのテキストを選択、カット」を一つのキーを押しただけで発火することが可能になります。
 
 ### 設定を出力する
 ⚠️実際に出力する前にはKarabiner-Elements側で新しくProfileを作っておくことを推奨⚠️
-<img width="1552" alt="ss 2025-04-16 19 27 46" src="https://github.com/user-attachments/assets/6dee86a8-4ff5-4e74-b270-6538f52a9af8" />
+<p align="center">
+ <img width="1552" alt="ss 2025-04-16 19 27 46" src="https://github.com/user-attachments/assets/6dee86a8-4ff5-4e74-b270-6538f52a9af8" />
+</p>
 
 右上のツールバーから出力ボタンを押すとシートが表示されます。
 
@@ -100,7 +128,9 @@ Importと進みKarabiner-Elements側Complex ModificationsタブでAdd Predifined
 テキトーな場所に出力したjsonファイルは削除してしまって問題ありません。
 
 ### 実際に打てるかテストする
-<img width="316" alt="ss 2025-04-16 19 33 52" src="https://github.com/user-attachments/assets/893fa274-3fe7-420d-b38a-8d3e8742a0fd" />
+<p align="center">
+ <img width="316" alt="ss 2025-04-16 19 33 52" src="https://github.com/user-attachments/assets/893fa274-3fe7-420d-b38a-8d3e8742a0fd" />
+</p>
 
 Karabiner-EventViewerから変数の状態や、出力されているキーコードを確認しましょう。
 カスタム通りに打てていれば問題ありません。存分にキーボードカスタマイズを楽しんでください！
@@ -111,7 +141,9 @@ Karabiner-EventViewerから変数の状態や、出力されているキーコ�
 ## 細かいところの使い方
 
 ### Configurationの作成
-<img width="496" alt="image" src="https://github.com/user-attachments/assets/f8c3c33b-09fd-443c-9c0b-f36337104001" />
+<p align="center">
+ <img width="496" alt="image" src="https://github.com/user-attachments/assets/f8c3c33b-09fd-443c-9c0b-f36337104001" />
+</p>
 
 Configurationには3つのデバイス、デバイスに含まれるキーボードキー、Macroの情報が含まれています。
 左上の＋ボタンを押すとシートが表示され、カスタムしたいキーボードに近いものを選びAdd Configurationとして設定を追加してください。
@@ -120,15 +152,19 @@ Configurationには3つのデバイス、デバイスに含まれるキーボー
 ⚠️注意：jsonと言ってもKarabiner-ElementsようのjsonではなくエクスポートからShareボタンで出力できるjsonファイルのみがインポートできます⚠️
 
 ### Macro
-<img width="429" alt="ss 2025-04-17 10 43 08" src="https://github.com/user-attachments/assets/584b6626-3e57-4ccf-9b27-91c2f8b52996" />
+<p align="center">
+ <img width="429" alt="ss 2025-04-17 10 43 08" src="https://github.com/user-attachments/assets/584b6626-3e57-4ccf-9b27-91c2f8b52996" />
+</p>
 
 MacroタブでUser Macroを新たに作成できます。
-
-<img width="695" alt="ss 2025-04-17 10 44 19" src="https://github.com/user-attachments/assets/8c11d506-19d8-4d41-9c08-ed551dfd9858" />
+<p align="center">
+ <img width="695" alt="ss 2025-04-17 10 44 19" src="https://github.com/user-attachments/assets/8c11d506-19d8-4d41-9c08-ed551dfd9858" />
+</p>
 
 一つのキーコードごとに修飾キーを割り当てることができます。画像のマクロを割り当てた場合、 **Hello!** と1つのキーの押下やコンボで打てるようになります。
-
-<img width="692" alt="ss 2025-04-17 10 47 38" src="https://github.com/user-attachments/assets/e5afc5ae-03e5-45a1-a4a2-5cf074a117b6" />
+<p align="center">
+ <img width="692" alt="ss 2025-04-17 10 47 38" src="https://github.com/user-attachments/assets/e5afc5ae-03e5-45a1-a4a2-5cf074a117b6" />
+</p>
 
 作成したマクロを他のConfigurationでも使いたい場合は、左サイドバーのラベルへドラッグ&ドロップするとコピーできます。
 
@@ -139,43 +175,52 @@ Karabiner-ElementsのSimple Modificationでキーコードを書き換えてい�
 
 
 #### キーコードの編集
-
-<img width="803" alt="ss 2025-04-17 11 04 26" src="https://github.com/user-attachments/assets/315e6292-0c5b-4273-abcf-4cf1cf2c8a7f" />
+<p align="center">
+ <img width="803" alt="ss 2025-04-17 11 04 26" src="https://github.com/user-attachments/assets/315e6292-0c5b-4273-abcf-4cf1cf2c8a7f" />
+</p>
 
 下のキーをドラッグ&ドロップするか、クリックして選択状態のキーボードキーに対してキーコードを注入することができます。
-
-<img width="115" alt="ss 2025-04-17 11 08 46" src="https://github.com/user-attachments/assets/3447f4fd-6c33-42af-a027-a4fc44f4a230" />
+<p align="center">
+ <img width="115" alt="ss 2025-04-17 11 08 46" src="https://github.com/user-attachments/assets/3447f4fd-6c33-42af-a027-a4fc44f4a230" />
+</p>
 
 またはキーボードキーをダブルクリックすると赤いインジケーターが点滅し、その状態で実際のキーボードからキー入力をするとそのキーコードを注入することができます。注入後は隣のキーボードキーに入力監視状態が移るので連続してキーコード編集を行えます。
 
 #### キーボードキーの編集
-<img width="274" alt="ss 2025-04-17 11 11 45" src="https://github.com/user-attachments/assets/847b4c91-c196-45ff-85fd-67a9dd96560e" />
+<p align="center">
+ <img width="274" alt="ss 2025-04-17 11 11 45" src="https://github.com/user-attachments/assets/847b4c91-c196-45ff-85fd-67a9dd96560e" />
+</p>
 
 選択状態のキーボードキーにカーソルをホバーするとポップオーバーが表示されます。
 ここではキーの水平方向の大きさ、スペーサーか否か、キーのシェイプを選択できます。
 is SpacerをトグルするとRemap,Comboタブでは表示されずスペーサー扱いになり、json出力時にもカスタムは無視されます。
-
-<img width="270" alt="ss 2025-04-17 11 16 25" src="https://github.com/user-attachments/assets/4de98d1f-883a-4633-a702-312c5c777084" />
+<p align="center">
+ <img width="270" alt="ss 2025-04-17 11 16 25" src="https://github.com/user-attachments/assets/4de98d1f-883a-4633-a702-312c5c777084" />
+</p>
 
 インスペクター(右サイドバー)をトグルするとさらに細かい情報をカスタマイズできます。
 Labelでは表示されるテキストかSF Symbol名を入力して表示をカスタムできます。
 
 #### デバイスの編集
-
-<img width="1022" alt="ss 2025-04-17 11 14 42" src="https://github.com/user-attachments/assets/ba94ac60-0eea-4eb7-8ff9-ae048f5d0a4c" />
+<p align="center">
+ <img width="1022" alt="ss 2025-04-17 11 14 42" src="https://github.com/user-attachments/assets/ba94ac60-0eea-4eb7-8ff9-ae048f5d0a4c" />
+</p>
 
 キーボードキーはデバイスに所属しています。デバイスに対してIDなどのConditionを追加してあげるとそのデバイスのそのキーコードのみを書き換えるようになります。
 デバイス右上の歯車マークをクリックするとポップオーバーが表示され、各種IDの有効化とIDの編集が行えます。
 スライダーを変更するとキーボードキーの単位サイズを変更できます。
 
 ### Remap
-
-<img width="655" alt="ss 2025-04-16 19 09 09" src="https://github.com/user-attachments/assets/2ef092d0-2cb5-442f-8b82-b156646f9de0" />
+<p align="center">
+ <img width="655" alt="ss 2025-04-16 19 09 09" src="https://github.com/user-attachments/assets/2ef092d0-2cb5-442f-8b82-b156646f9de0" />
+</p>
 
 Remapタブではキーの配置などを好きにカスタマイズすることができます。下のキーをキーボードキーにドラッグ&ドロップ、選択されているキーボードキーにキーをクリックで注入、長押しでホールドに注入、キーボードキーをダブルクリックで入力監視状態に移行しキーボードの入力で注入してカスタマイズすることが可能です。
 
 また、さまざまな条件に基づいてカスタムを分岐することが可能です。
-<img width="818" alt="image" src="https://github.com/user-attachments/assets/9fddeeb9-9e5d-46fd-b2eb-160b545f9041" />
+<p align="center">
+ <img width="818" alt="image" src="https://github.com/user-attachments/assets/9fddeeb9-9e5d-46fd-b2eb-160b545f9041" />
+</p>
 
 #### レイヤー
 自作キーボードの機能を模倣、再現した機能です。
@@ -189,11 +234,15 @@ Baseが何もしていないレイヤーで、その他が数字・色に応じ�
 Conditionをピッカーから変更して9個分のConditionを追加でカスタマイズすることができます。それぞれに対して条件に必要なテキストフィールドを埋めることでその条件下のみで書き換えが行われるようになります。
 
 ##### アプリ
-<img width="781" alt="image" src="https://github.com/user-attachments/assets/c630cc7e-6408-425d-bd29-0c08279881db" />
+<p align="center">
+ <img width="781" alt="image" src="https://github.com/user-attachments/assets/c630cc7e-6408-425d-bd29-0c08279881db" />
+</p>
 
 Karabiner-EventViewerからConditionに使いたいアプリのバンドル識別子をコピーしテキストフィールドに貼り付けます。
 ##### Input Source
-<img width="527" alt="image" src="https://github.com/user-attachments/assets/1f59f6e8-c648-4b79-9c7c-0bb231969304" />
+<p align="center">
+ <img width="527" alt="image" src="https://github.com/user-attachments/assets/1f59f6e8-c648-4b79-9c7c-0bb231969304" />
+</p>
 
 Karabiner-EventViewerからConditionに使いたいlanguageを確認してそれをテキストフィールドに入力します。
 
@@ -203,13 +252,15 @@ Karabiner-EventViewerからConditionに使いたいlanguageを確認してそれ
 
 
 #### タップホールドのカスタマイズ
-
-<img width="244" alt="image" src="https://github.com/user-attachments/assets/110bb4d1-77ec-445f-be9a-5afb7bbbc227" />
+<p align="center">
+ <img width="244" alt="image" src="https://github.com/user-attachments/assets/110bb4d1-77ec-445f-be9a-5afb7bbbc227" />
+</p>
 
 タップホールドとはキーをタップした時とホールドした時で異なるキーコードを出力できるようになる機能です。
 画像では元々がAのキーをタップしたときはB、ホールドして他のキーと押したときはLayer1に遷移する、というカスタマイズになります。
-
-<img width="230" alt="image" src="https://github.com/user-attachments/assets/41d07510-6d27-4a1f-99d2-f9a1f711b5f6" />
+<p align="center">
+ <img width="230" alt="image" src="https://github.com/user-attachments/assets/41d07510-6d27-4a1f-99d2-f9a1f711b5f6" />
+</p>
 
 右側のサイドバーからさらに細かいカスタマイズを行うことが可能です。
 タップホールドにはChordとDurationという二つのタイプがあります。
@@ -238,7 +289,9 @@ LayerとConditionを満たすキーボードキー1つ分の書き換えを出�
 複数の書き換えを内包しても構いませんが、注意としては **{** から始まって、 **}** で終わるようにしてください。
 
 ### Combo
-<img width="573" alt="image" src="https://github.com/user-attachments/assets/12c1e7b8-24f3-4ead-92a7-e3236eb06b73" />
+<p align="center">
+ <img width="573" alt="image" src="https://github.com/user-attachments/assets/12c1e7b8-24f3-4ead-92a7-e3236eb06b73" />
+</p>
 
 Comboタブではコンボをカスタマイズすることができます。
 
@@ -250,7 +303,9 @@ Comboタブではコンボをカスタマイズすることができます。
 またRemapと同じようにレイヤーや、Condition、タップホールドのカスタマイズが可能です。
 画像はASDFの同時押しでレイヤー1にトグルされるようなカスタム例です。もしレイヤー1にComboを追加しASDFを割り当てた場合、レイヤー条件を満たしている時のみその書き換えが実行され、条件を満たしていない場合はレイヤー1のトグルが実行されるようなイメージです。
 
-<img width="233" alt="ss 2025-04-17 12 26 50" src="https://github.com/user-attachments/assets/c90266b7-689e-4bf4-b0de-a00bf15a7ef4" />
+<p align="center">
+ <img width="233" alt="ss 2025-04-17 12 26 50" src="https://github.com/user-attachments/assets/c90266b7-689e-4bf4-b0de-a00bf15a7ef4" />
+</p>
 
 #### Simultaneous Options
 
@@ -280,7 +335,9 @@ LayerとConditionを満たすコンボ1つ分の書き換えを出力し、編�
 複数の書き換えを内包しても構いませんが、注意としては **{** から始まって、 **}** で終わるようにしてください。
 
 ### Export
-<img width="499" alt="image" src="https://github.com/user-attachments/assets/2545acb9-5583-4d8f-8423-922948654f6d" />
+<p align="center">
+ <img width="499" alt="image" src="https://github.com/user-attachments/assets/2545acb9-5583-4d8f-8423-922948654f6d" />
+</p>
 
 右上のツールバーから出力ボタンを押すとシートが表示されます。
 
