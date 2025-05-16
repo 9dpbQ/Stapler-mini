@@ -1,6 +1,6 @@
 # Stapler-mini
-![icon](https://github.com/user-attachments/assets/728c6d58-487d-4064-88a5-7f1f9846cf3a)
 
+![icon_256x256@1x](https://github.com/user-attachments/assets/cc5e0b43-4d6c-4f2c-a7ef-8930f7dcfbb5)
 
 Stapler-miniは[Karabiner-Elements](https://karabiner-elements.pqrs.org/)で使える設定ファイルを出力するjson出力アプリです。
 Karabiner-Elementsで認識できるキーボードならどんなキーボードでも、リマップ・タップホールド・レイヤー機能・コンボを直感的にカスタマイズすることができます。
@@ -11,6 +11,13 @@ Karabiner-Elementsで認識できるキーボードならどんなキーボー�
 [Karabiner-Elements](https://karabiner-elements.pqrs.org/)をダウンロードしていない場合はダウンロード、案内の通りに権限を与えます。
 
 ### Stapler-miniをダウンロード
+ダウンロードした後zipファイルを解凍し開こうとすると以下のような警告が出ます。
+
+<img width="372" alt="ss 2025-05-16 15 10 34" src="https://github.com/user-attachments/assets/d05c3c0a-19b8-444d-9dd3-ed258665a089" />
+
+アプリを開くには？ボタンを押すとヘルプウィンドウが立ち上がるので内容に従ってください。
+<img width="1073" alt="ss 2025-05-16 15 10 47" src="https://github.com/user-attachments/assets/5f063989-f68b-4c76-9ef0-80b4e7904b89" />
+<img width="711" alt="ss 2025-05-16 15 11 32" src="https://github.com/user-attachments/assets/8515dae5-ab90-4db1-8ea8-fc628f8390f6" />
 
 ## カスタマイズの流れ
 
@@ -37,10 +44,11 @@ Remapタブではキーの配置などを好きにカスタマイズすること
 <img width="818" alt="image" src="https://github.com/user-attachments/assets/9fddeeb9-9e5d-46fd-b2eb-160b545f9041" />
 
 #### レイヤー
-自作キーボードの機能を模倣、再現した機能です。
-Karabiner-Elementsで変数の状態を用いて書き換えを行うかどうかを分岐することで再現していて、ホームポジションのみで数字やArrowキーを入力できるようになったり、アプリ用のレイヤーからよく使うようなコマンドをホームポジションの打ちやすいキーで発火できるようになるのが強みです。
 
-Baseが何もしていないレイヤーで、その他が数字・色に応じたレイヤーです。
+ホームポジションのみで数字やArrowキーを入力できるようになったり、アプリ用のレイヤーからよく使うようなコマンドをホームポジションの打ちやすいキーで発火できるようになるのが強みです。
+自作キーボードの機能を再現した機能で、Karabiner-Elementsで変数の状態を用いて書き換えを行うかどうかを分岐することで再現しています。
+
+Baseが普通にキーを押下した状態で、その他が数字・色に応じたレイヤーです。
 平行四辺形のボタンでレイヤーを切り替えてカスタマイズできます。レイヤーへの遷移はモーメンタリー、トグルキーがあるのでそれを任意のキーに割り当ててください。
 おすすめはスペースキーの長押しにレイヤーモーメンタリーを割り当てすることです。親指で押しながら他の指でレイヤーのキーコードを発火できます。
 
