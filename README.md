@@ -17,19 +17,15 @@ Karabiner-Elementsで認識できるキーボードならどんなキーボー�
  <img src=https://github.com/user-attachments/assets/1be0b596-032c-4c73-bb4d-1d816bae1eb4>
 </p>
 
-ダウンロードした後zipファイルを解凍し開こうとすると以下のような警告が出ます。
+ダウンロードした後zipファイルを解凍し開こうとすると以下のような警告が出ます()
 <p align="center">
 <img src="https://github.com/user-attachments/assets/d05c3c0a-19b8-444d-9dd3-ed258665a089" />
 </p>
-
-アプリを開くには？ボタンを押すとヘルプウィンドウが立ち上がるので内容に従ってください。
+**？** をクリックするとヘルプウインドウが立ち上がるのでアプリを開きたい場合は指示に従ってください。
 <p align="center">
  <img align="center" width="1073" alt="ss 2025-05-16 15 10 47" src="https://github.com/user-attachments/assets/5f063989-f68b-4c76-9ef0-80b4e7904b89" />
  <img align="center" width="711" alt="ss 2025-05-16 15 11 32" src="https://github.com/user-attachments/assets/8515dae5-ab90-4db1-8ea8-fc628f8390f6" />
 </p>
-
-
-
 
 ## カスタマイズの流れ
 
@@ -332,7 +328,7 @@ down orderのキーアップ版です。
 
 ##### Custom　JSON
 LayerとConditionを満たすコンボ1つ分の書き換えを出力し、編集することができます。出力されたテキストを他のコードエディタに貼り付けて作業することを推奨します。
-複数の書き換えを内包しても構いませんが、注意としては **{** から始まって、 **}** で終わるようにしてください。
+複数の書き換えを内包しても問題ありませんが注意としては **{** から始まって、 **}** で終わるようにしてください。
 
 ### Export
 <p align="center">
@@ -352,3 +348,4 @@ Karabiner-Elementsでインポートした際ファイルは、
 フォルダ内に複製されているので、手直ししたい際はそれをテキストディタで開いて編集してください。
 
 シートからはShareボタンを押すとConfiguration自体を共有するためのjsonファイルが出力できます。
+
