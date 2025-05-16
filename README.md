@@ -1,6 +1,6 @@
 # Stapler-mini
+![icon](https://github.com/user-attachments/assets/728c6d58-487d-4064-88a5-7f1f9846cf3a)
 
-![AppIcon_512x512@1x](https://github.com/user-attachments/assets/6a590d9d-824f-48ff-9ce2-6ee7d008d08b)
 
 Stapler-miniは[Karabiner-Elements](https://karabiner-elements.pqrs.org/)で使える設定ファイルを出力するjson出力アプリです。
 Karabiner-Elementsで認識できるキーボードならどんなキーボードでも、リマップ・タップホールド・レイヤー機能・コンボを直感的にカスタマイズすることができます。
@@ -118,7 +118,7 @@ MacroタブでUser Macroを新たに作成できます。
 
 <img width="695" alt="ss 2025-04-17 10 44 19" src="https://github.com/user-attachments/assets/8c11d506-19d8-4d41-9c08-ed551dfd9858" />
 
-一つのキーコードごとに修飾キーを割り当てることができます。画像のマクロを割り当てた場合、 **Hello!** と一つのキーで打てるようになります。
+一つのキーコードごとに修飾キーを割り当てることができます。画像のマクロを割り当てた場合、 **Hello!** と1つのキーの押下やコンボで打てるようになります。
 
 <img width="692" alt="ss 2025-04-17 10 47 38" src="https://github.com/user-attachments/assets/e5afc5ae-03e5-45a1-a4a2-5cf074a117b6" />
 
