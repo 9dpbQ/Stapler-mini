@@ -21,7 +21,7 @@ Karabiner-Elementsで認識できるキーボードならどんなキーボー�
 <p align="center">
 <img src="https://github.com/user-attachments/assets/d05c3c0a-19b8-444d-9dd3-ed258665a089" />
 </p>
-**？** をクリックするとヘルプウインドウが立ち上がるのでアプリを開きたい場合は指示に従ってください。
+？ をクリックするとヘルプウインドウが立ち上がるのでアプリを開きたい場合は指示に従ってください。
 <p align="center">
  <img align="center" width="1073" alt="ss 2025-05-16 15 10 47" src="https://github.com/user-attachments/assets/5f063989-f68b-4c76-9ef0-80b4e7904b89" />
  <img align="center" width="711" alt="ss 2025-05-16 15 11 32" src="https://github.com/user-attachments/assets/8515dae5-ab90-4db1-8ea8-fc628f8390f6" />
