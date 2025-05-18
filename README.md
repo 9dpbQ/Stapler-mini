@@ -349,3 +349,6 @@ Karabiner-Elementsでインポートした際ファイルは、
 
 シートからはShareボタンを押すとConfiguration自体を共有するためのjsonファイルが出力できます。
 
+## 不具合、わからない点、設定をシェアしたい
+[Discordサーバー](https://discord.gg/2v3FbTmd9c)にてお気軽に質問と罵倒をどうぞ！😇
+
