@@ -145,7 +145,11 @@ Configurationには3つのデバイス、デバイスに含まれるキーボー
 左上の＋ボタンを押すとシートが表示され、カスタムしたいキーボードに近いものを選びAdd Configurationとして設定を追加してください。
 
 右上のImport Configurationボタンを押すとjsonファイルをインポートしてConfigurationを追加できます。
-⚠️注意：jsonと言ってもKarabiner-ElementsようのjsonではなくエクスポートからShareボタンで出力できるjsonファイルのみがインポートできます⚠️
+Karabiner-Elements用のjsonではなくエクスポートからShareボタンで出力したjsonファイルのみがインポートできます
+
+⚠️⚠️⚠️⚠️注意⚠️⚠️⚠️⚠️
+
+**ネットから拾った見知らぬ人の設定ファイルは有効化しないことを推奨します。Karabiner-Elementsではシェルコマンドも発火可能です。インポートした設定には悪意あるコマンドが含まれている可能性があります。あくまでも同じ設定を別のMacでも使いたい時や、設定を友人と共有するための機能です。**
 
 ### Macro
 <p align="center">
@@ -349,6 +353,6 @@ Karabiner-Elementsでインポートした際ファイルは、
 
 シートからはShareボタンを押すとConfiguration自体を共有するためのjsonファイルが出力できます。
 
-## 不具合、わからない点、設定をシェアしたい
+## 不具合、わからない点
 [Discordサーバー](https://discord.gg/2v3FbTmd9c)にてお気軽に質問と罵倒をどうぞ！😇
 
