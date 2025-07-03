@@ -1,0 +1,9 @@
+# Xcode user settings
+xcuserdata/
+
+# Build artifacts
+*.hmap
+*.dSYM
+.build/
+DerivedData/
+build/
