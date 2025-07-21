@@ -21,7 +21,7 @@ struct PopoverFromDetail: View {
             KeytopView_FromDetail(
                 fromDetail: keyboardKey.fromDetail,
                 isSelected: true,
-                keyMetrics: keyMetrics,
+                keyMetrics: KeyMetrics(unitSize: keyMetrics.unitSize, baseSizeX: 65),
                 keyShape: keyboardKey.keyShape
             )
 //            .background(Color.red.opacity(0.5))
@@ -93,7 +93,7 @@ struct PopoverToDetail: View {
                     KeyTopView_ToDetail(
                         toDetail: $toDetail,
                         keyShape: keyShape,
-                        keyMetrics: keyMetrics,
+                        keyMetrics: KeyMetrics(unitSize: keyMetrics.unitSize, baseSizeX: 65),
                         tapOrHold: .tap
                     )
                     ModifierToggleView(withModifier: $toDetail.withModifier_tap)
@@ -105,7 +105,7 @@ struct PopoverToDetail: View {
                         KeyTopView_ToDetail(
                             toDetail: $toDetail,
                             keyShape: keyShape,
-                            keyMetrics: keyMetrics,
+                            keyMetrics: KeyMetrics(unitSize: keyMetrics.unitSize, baseSizeX: 65),
                             tapOrHold: .hold
                         )   
                         ModifierToggleView(withModifier: $toDetail.withModifier_hold)

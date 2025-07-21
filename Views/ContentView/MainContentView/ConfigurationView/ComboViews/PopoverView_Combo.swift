@@ -121,7 +121,7 @@ struct PopoverView_combo: View {
         }
     }
     private var tapKeyView_Keymap: some View {
-        KeyTopView(isSelected: true)
+        KeyTopView(isSelected: true, displaySize: keyMetrics.baseSizeX)
             .overlay {
                 if toDetail.isCustomized_tap {
                     HStack {
@@ -165,7 +165,7 @@ struct PopoverView_combo: View {
         })
     }
     private var holdKeyView_Keymap: some View {
-        KeyTopView(isSelected: true)
+        KeyTopView(isSelected: true, displaySize: keyMetrics.baseSizeX)
             .overlay {
                 if toDetail.isCustomized_hold {
                     if toDetail.isMacro_hold {

@@ -284,12 +284,20 @@ struct KeyboardKeyView: View {
         switch viewModel.configuration.selections.tab {
         case .deviceEdit:
             print("double click in Device edit tab")
-            keyboardMonitor.startMonitoring_FromDetail(configuration: $viewModel.configuration)
+            if viewModel.configuration.selections.keyboardKey.id == keyboardKey.id {
+                keyboardMonitor.startMonitoring_FromDetail(configuration: $viewModel.configuration)
+            } else {
+                viewModel.configuration.selections.keyboardKey = keyboardKey
+            }
         case .remap:
             print("double click in Remap tab")
-            keyboardMonitor.startMonitoring_ToDetail_nextKeyboardKey(
-                configuration: $viewModel.configuration
-            )
+            if viewModel.configuration.selections.keyboardKey.id == keyboardKey.id {
+                keyboardMonitor.startMonitoring_ToDetail_nextKeyboardKey(
+                    configuration: $viewModel.configuration
+                )
+            } else {
+                viewModel.configuration.selections.keyboardKey = keyboardKey
+            }
         default:
             print("doubleClicked in combo, macro tab")
         }

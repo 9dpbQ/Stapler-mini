@@ -34,16 +34,14 @@ final class ComboArray: ObservableObject, Codable {
     
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        self._array = try container.decodeIfPresent([Combo].self, forKey: ._collection) ?? []
-        self.idsInOrderCollection = try container.decodeIfPresent([CustomUUID].self, forKey: .idsInOrderCollection) ?? []
+        self._array = try container.decode([Combo].self, forKey: ._collection)
+        self.idsInOrderCollection = try container.decode([CustomUUID].self, forKey: .idsInOrderCollection)
     }
     
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
-        if !comboDetailArray.isEmpty {
-            try container.encode(_array, forKey: ._collection)
-            try container.encode(idsInOrderCollection, forKey: .idsInOrderCollection)
-        }
+        try container.encode(_array, forKey: ._collection)
+        try container.encode(idsInOrderCollection, forKey: .idsInOrderCollection)
     }
     
     // 既存のgetSortedArray関数はそのまま

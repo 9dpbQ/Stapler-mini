@@ -73,7 +73,8 @@ struct KeyTopView_ToDetail: View {
             isSelected: true,
             hilightColor: viewModel.configuration.selections.layer.accentColor,
             keyShape: keyShape,
-            unitSize: keyMetrics.unitSize
+            unitSize: keyMetrics.unitSize,
+            displaySize: keyMetrics.baseSizeX
         )
             .overlay {
                 if isCustomized {

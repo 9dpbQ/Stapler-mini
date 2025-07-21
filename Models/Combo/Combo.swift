@@ -41,7 +41,7 @@ final class Combo: Identifiable, ObservableObject, Codable {
     }
     required init(from decoder: any Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.id = UUID()
+        self.id = try container.decode(UUID.self, forKey: .id)
         
         self.simultaneouses = try container.decodeIfPresent([CustomUUID].self, forKey: .simultaneouses) ?? []
         self.isThresholdEnabled = try container.decodeIfPresent(Bool.self, forKey: .isThresholdEnabled) ?? false

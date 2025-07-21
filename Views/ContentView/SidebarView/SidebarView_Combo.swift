@@ -13,7 +13,8 @@ struct SidebarView_Combo: View {
     @State var isTapHoldExpanded: Bool = false
     @State var isMultiActionExpanded: Bool = false
     @State var isCustomJSONExpanded: Bool = false
-    
+    let keyMetrics: KeyMetrics = KeyMetrics(unitSize: 1, baseSizeX: 65)
+
     var body: some View {
         Group {
             if viewModel.configuration.isComboSelected {
@@ -26,7 +27,7 @@ struct SidebarView_Combo: View {
                             KeyTopView_ToDetail(
                                 toDetail: $viewModel.configuration.selections.combo.toDetail,
                                 keyShape: .square,
-                                keyMetrics: viewModel.keyMetrics,
+                                keyMetrics: keyMetrics,
                                 tapOrHold: .tap
                             )
                             ModifierToggleView(withModifier: $viewModel.configuration.selections.combo.toDetail.withModifier_tap)
@@ -39,7 +40,7 @@ struct SidebarView_Combo: View {
                                 KeyTopView_ToDetail(
                                     toDetail: $viewModel.configuration.selections.combo.toDetail,
                                     keyShape: .square,
-                                    keyMetrics: viewModel.keyMetrics,
+                                    keyMetrics: keyMetrics,
                                     tapOrHold: .hold
                                 )
                                 ModifierToggleView(withModifier: $viewModel.configuration.selections.combo.toDetail.withModifier_hold)

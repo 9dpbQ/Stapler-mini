@@ -66,11 +66,16 @@ struct ComboDetailView: View {
                 .modifier(KeyTopShapeFrame(.square, keyMetrics: keyMetrics))
                 .onTapGesture(count: 2, perform: {
                     print("double clicked")
-                    viewModel.keyboardMonitor.startMonitoring_combo_Next(
-                        //                    combo: $combo,
-                        configuration: $viewModel.configuration,
-                        nextIndicator: $nextIndicator
-                    )
+                    if viewModel.configuration.selections.combo == combo {
+                        viewModel.keyboardMonitor.startMonitoring_combo_Next(
+                            //                    combo: $combo,
+                            configuration: $viewModel.configuration,
+                            nextIndicator: $nextIndicator
+                        )
+                    } else {
+                        viewModel.configuration.selections.combo = combo
+                    }
+                    
                 })
                 .dropDestination(for: DragClass.self) { items, location in
                     guard let item = items.first else { return false }

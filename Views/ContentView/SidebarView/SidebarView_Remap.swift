@@ -13,6 +13,8 @@ struct SidebarView_Remap: View {
     @State var isMultiActionExpanded: Bool = false
     @State var isCustomJSONExpanded: Bool = false
     
+    let keyMetrics: KeyMetrics = KeyMetrics(unitSize: 1, baseSizeX: 65)
+    
     var body: some View {
         if viewModel.configuration.selections.keyboardKey != .initialKey {
             let selectedKeyboardKey = viewModel.configuration.selections.keyboardKey
@@ -31,7 +33,7 @@ struct SidebarView_Remap: View {
                         KeyTopView_ToDetail(
                             toDetail: toDetail,
                             keyShape: selectedKeyboardKey.keyShape,
-                            keyMetrics: viewModel.keyMetrics,
+                            keyMetrics: keyMetrics,
                             tapOrHold: .tap
                         )
                         
@@ -47,7 +49,7 @@ struct SidebarView_Remap: View {
                             KeyTopView_ToDetail(
                                 toDetail: toDetail,
                                 keyShape: selectedKeyboardKey.keyShape,
-                                keyMetrics: viewModel.keyMetrics,
+                                keyMetrics: keyMetrics,
                                 tapOrHold: .hold
                             )
                             ModifierToggleView(withModifier: toDetail.withModifier_hold)
