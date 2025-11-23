@@ -11,5 +11,4 @@ enum DeviceType: CaseIterable, Codable {
     case keyboard_tenkeyLess
     case keyboard_fullSize
     case mouse
-    //nadonado
 }

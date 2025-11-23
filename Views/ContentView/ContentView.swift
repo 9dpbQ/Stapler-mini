@@ -96,7 +96,7 @@ struct ContentView: View {
                     }
                 }
             }
-            .navigationSplitViewColumnWidth(min: 180, ideal: 200, max: 220)
+            .navigationSplitViewColumnWidth(min: 190, ideal: 205, max: 220)
             .toolbar {
                 ToolbarItem {
                     Button {

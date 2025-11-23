@@ -73,6 +73,14 @@ struct RowsAddButtonView: View {
                                                 keyboardKeys.wrappedValue.insert(contentsOf: keys, at: keyIndex)
                                             }
                                         }
+                                        if rowIndex.indexValue() < 5 {
+                                            Button("Add Key to Next Row") {
+                                                withAnimation {
+                                                    var newKey = KeyboardKey(output: .letter_keys(.a))
+                                                    rows.getRowKeyboardKeys(rowIndex.nextRow()).wrappedValue.append(newKey)
+                                                }
+                                            }
+                                        }
                                     }
                                 Spacer()
                                     .frame(
