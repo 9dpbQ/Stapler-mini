@@ -1,6 +1,6 @@
 # Stapler-mini
 <p align="center">
- <img src=https://github.com/user-attachments/assets/cc5e0b43-4d6c-4f2c-a7ef-8930f7dcfbb5>
+ <img width="256" height="256" alt="AppIcon-iOS-Default-1024x1024@1x" src="https://github.com/user-attachments/assets/c859d8ed-2711-49a2-a05c-15fc63a19653" />
 </p>
 
 <details>
