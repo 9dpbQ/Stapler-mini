@@ -2105,7 +2105,7 @@ extension JSONExporter {
             throw error
         }
         
-        let parameters = para(toDetail)
+        let parameters = para(toDetail, comboThreshold: comboThreshold)
 
         if toDetail.isTapHoldEnabled { // TapHold
             
@@ -2350,7 +2350,7 @@ extension JSONExporter {
             } else {
                 to_string_tap = "this message should not in json"
             }
-            return (to_string_tap, "this message should not exist in json: Error in toString_TapHoldParameters Tap Section", nil)
+            return (to_string_tap, "this message should not exist in json: Error in toString_TapHoldParameters Tap Section", parameters)
         }
     }
     

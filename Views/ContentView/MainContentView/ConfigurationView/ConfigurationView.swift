@@ -230,6 +230,11 @@ struct SelectConditionAndLayerView: View {
                     .labelsHidden()
                     .pickerStyle(MenuPickerStyle())
                     .frame(width: 200)
+                    .onChange(of: selections.condition) { oldValue, newValue in
+                        selections.keyboardKey = .initialKey
+                        selections.combo = .initialCombo
+                        selections.macro = .initialMacro
+                    }
                     
                     if selections.condition != .condition0 {
                         Toggle(

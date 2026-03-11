@@ -13,6 +13,7 @@ struct SidebarView_Combo: View {
     @State var isTapHoldExpanded: Bool = false
     @State var isMultiActionExpanded: Bool = false
     @State var isCustomJSONExpanded: Bool = false
+    @State private var localThreshold: Double = 50.0
     let keyMetrics: KeyMetrics = KeyMetrics(unitSize: 1, baseSizeX: 65)
 
     var body: some View {
@@ -137,12 +138,15 @@ struct SidebarView_Combo: View {
                             Toggle("Threshold", isOn: $viewModel.configuration.selections.combo.isThresholdEnabled)
                                 .toggleStyle(.switch)
                             if viewModel.configuration.selections.combo.isThresholdEnabled {
-                                Text("\(Int(viewModel.configuration.selections.combo.comboThreshold))ms")
-                                Slider(
-                                    value: $viewModel.configuration.selections.combo.comboThreshold,
-                                    in: 10...500,
-                                    step: 10
-                                )
+                                Text("\(Int(localThreshold))ms")
+                                Slider(value: $localThreshold, in: 10...500, step: 10) { editing in
+                                    if !editing {
+                                        viewModel.configuration.selections.combo.comboThreshold = localThreshold
+                                    }
+                                }
+                                .onAppear {
+                                    localThreshold = viewModel.configuration.selections.combo.comboThreshold
+                                }
                             }
                             Toggle("uninterrupt", isOn: $viewModel.configuration.selections.combo.detect_key_down_uninterruptedly)
                                 .toggleStyle(.switch)
@@ -206,6 +210,9 @@ struct SidebarView_Combo: View {
             } else {
                 InitialComboView()
             }
+        }
+        .onChange(of: viewModel.configuration.selections.combo.id) { _, _ in
+            localThreshold = viewModel.configuration.selections.combo.comboThreshold
         }
     }
 }

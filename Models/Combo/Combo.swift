@@ -63,12 +63,12 @@ extension Combo {
         try container.encode(id, forKey: .id)
         if !simultaneouses.isEmpty { try container.encode(simultaneouses, forKey: .simultaneouses) }
         if isThresholdEnabled { try container.encode(isThresholdEnabled, forKey: .isThresholdEnabled) }
-        if comboThreshold == 50.0 { try container.encode(comboThreshold, forKey: .comboThreshold) }
+        if comboThreshold != 50.0 { try container.encode(comboThreshold, forKey: .comboThreshold) }
         try container.encode(toDetail, forKey: .toDetail)
         
         if detect_key_down_uninterruptedly { try container.encode(detect_key_down_uninterruptedly, forKey: .detect_key_down_uninterruptedly) }
-        if key_down_order == .insensitive { try container.encode(key_down_order, forKey: .key_down_order) }
-        if key_up_order == .insensitive { try container.encode(key_up_order, forKey: .key_up_order) }
+        if key_down_order != .insensitive { try container.encode(key_down_order, forKey: .key_down_order) }
+        if key_up_order != .insensitive { try container.encode(key_up_order, forKey: .key_up_order) }
         if key_up_when_all_keys_up { try container.encode(key_up_when_all_keys_up, forKey: .key_up_when_all_keys_up) }
     }
     enum CodingKeys: String, CodingKey {

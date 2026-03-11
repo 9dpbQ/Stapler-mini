@@ -34,8 +34,8 @@ final class ComboArray: ObservableObject, Codable {
     
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        self._array = try container.decode([Combo].self, forKey: ._collection)
-        self.idsInOrderCollection = try container.decode([CustomUUID].self, forKey: .idsInOrderCollection)
+        self._array = try container.decodeIfPresent([Combo].self, forKey: ._collection) ?? []
+        self.idsInOrderCollection = try container.decodeIfPresent([CustomUUID].self, forKey: .idsInOrderCollection) ?? []
     }
     
     func encode(to encoder: Encoder) throws {

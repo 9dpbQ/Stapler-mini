@@ -51,9 +51,9 @@ struct AddConfigSheetView: View {
                         Text(product.displayString()).tag(product)
                     }
                 }
-                Picker("Keyboard Region", selection: $keycodeRegion) {
+                Picker("Keyboard type", selection: $keycodeRegion) {
                     ForEach(KeycodeRegion.allCases, id: \.self) { region in
-                        Text(region.rawValue).tag(region)
+                        Text(region.layoutName()).tag(region)
                     }
                 }
                 Picker("Keyboard size", selection: $keyboardSize) {
@@ -89,7 +89,7 @@ struct AddConfigSheetView: View {
             .listStyle(.sidebar)
             .scrollDisabled(true)
         }
-        .frame(minWidth: 300, minHeight: 220)
+        .frame(minWidth: 300, minHeight: 250)
 
     }
 }
